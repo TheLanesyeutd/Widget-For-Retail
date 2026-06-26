@@ -1,0 +1,70 @@
+[
+  {
+    "name": "Retail Translation Terminal",
+    "img": "https://raw.githubusercontent.com/OpenBB-finance/backends-for-openbb/main/getting-started/assets/logo.png",
+    "img_dark": "",
+    "img_light": "",
+    "description": "Translates dense institutional data feeds, complex macroeconomic reports, SEC footnote disclosures, and options flow configurations into actionable narratives.",
+    "allowCustomization": true,
+    "tabs": {
+      "translation-overview": {
+        "id": "translation-overview",
+        "name": "Translation Overview",
+        "layout": [
+          {
+            "i": "macro_narrative_engine",
+            "x": 0,
+            "y": 0,
+            "w": 20,
+            "h": 15,
+            "state": {
+              "params": {
+                "ticker": "AAPL",
+                "country": "United States"
+              }
+            }
+          },
+          {
+            "i": "legal_footnote_hunter",
+            "x": 20,
+            "y": 0,
+            "w": 20,
+            "h": 15,
+            "state": {
+              "params": {
+                "ticker": "AAPL",
+                "quarter": "Q4"
+              }
+            }
+          },
+          {
+            "i": "whale_tracker",
+            "x": 0,
+            "y": 15,
+            "w": 40,
+            "h": 12,
+            "state": {
+              "params": {
+                "ticker": "AAPL",
+                "minPremium": 100000
+              }
+            }
+          }
+        ]
+      }
+    },
+    "groups": [
+      {
+        "name": "Group 1",
+        "type": "param",
+        "paramName": "ticker",
+        "defaultValue": "AAPL",
+        "widgetIds": [
+          "macro_narrative_engine",
+          "legal_footnote_hunter",
+          "whale_tracker"
+        ]
+      }
+    ]
+  }
+]
