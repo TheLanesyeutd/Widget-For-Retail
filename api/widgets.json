@@ -1,0 +1,107 @@
+{
+  "macro_narrative_engine": {
+    "name": "Macro Narrative Engine",
+    "description": "Explains the hidden structural connections between global macro events and specific consumer equities or sectors in plain English.",
+    "endpoint": "api/v1/translate/macro",
+    "category": "Macro",
+    "subCategory": "Narrative",
+    "type": "markdown",
+    "exportable": true,
+    "gridData": {
+      "w": 20,
+      "h": 15,
+      "minW": 10,
+      "minH": 10,
+      "maxW": 40,
+      "maxH": 100
+    },
+    "params": [
+      {
+        "type": "text",
+        "paramName": "ticker",
+        "value": "AAPL",
+        "label": "Ticker",
+        "show": true,
+        "description": "Equity symbol to analyze for macro transmission channels."
+      },
+      {
+        "type": "text",
+        "paramName": "country",
+        "value": "United States",
+        "label": "Country Focus",
+        "show": true,
+        "description": "Specific country macro data target."
+      }
+    ]
+  },
+  "legal_footnote_hunter": {
+    "name": "Legal Footnote Hunter",
+    "description": "Bypasses headline EPS metrics to surface hidden operational risks, rising CAC, and unusual revenue recognition policies buried deep in SEC footnotes.",
+    "endpoint": "api/v1/translate/legal",
+    "category": "Equity",
+    "subCategory": "Filings",
+    "type": "markdown",
+    "exportable": true,
+    "gridData": {
+      "w": 20,
+      "h": 15,
+      "minW": 10,
+      "minH": 10,
+      "maxW": 40,
+      "maxH": 100
+    },
+    "params": [
+      {
+        "type": "text",
+        "paramName": "ticker",
+        "value": "AAPL",
+        "label": "Ticker",
+        "show": true,
+        "description": "Equity symbol for SEC Filing deep dive analysis."
+      },
+      {
+        "type": "text",
+        "paramName": "quarter",
+        "value": "Q4",
+        "label": "Reporting Quarter",
+        "show": true,
+        "description": "Filing target quarter (Q1, Q2, Q3, Q4, or Annual 10-K)."
+      }
+    ]
+  },
+  "whale_tracker": {
+    "name": "Whale Tracker",
+    "description": "Translates dense institutional options flow setups, blocks, sweeps, and sweeps sentiment into clear retail-readable positioning reports.",
+    "endpoint": "api/v1/translate/whales",
+    "category": "Equity",
+    "subCategory": "Options",
+    "type": "markdown",
+    "exportable": true,
+    "gridData": {
+      "w": 40,
+      "h": 12,
+      "minW": 20,
+      "minH": 8,
+      "maxW": 40,
+      "maxH": 100
+    },
+    "params": [
+      {
+        "type": "text",
+        "paramName": "ticker",
+        "value": "AAPL",
+        "label": "Ticker",
+        "show": true,
+        "description": "Target equity symbol for options flow contextualization."
+      },
+      {
+        "type": "number",
+        "paramName": "minPremium",
+        "value": 100000,
+        "label": "Min Premium ($)",
+        "show": true,
+        "description": "Minimum premium threshold to capture institutional blocks."
+      }
+    ]
+  }
+}
